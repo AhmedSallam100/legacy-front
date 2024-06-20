@@ -1,0 +1,31 @@
+.reviews .container .review-boxes .review-box .review-icon {
+  position: absolute;
+  left: 50%;
+  top: -32px;
+  transform: translateX(-50%);
+  transition: var(--main-tran);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: var(--main-color);
+}
+.reviews .container .review-boxes .review-box .review-icon:hover {
+  border-radius: 50%;
+}
+.reviews .container .review-boxes .review-box .review-icon i {
+  font-size: 46px;
+}
+.reviews .container .review-boxes .review-box .review-text {
+  margin: 55px 0 15px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+.reviews .container .review-boxes .review-box .reviewer {
+  text-align: center;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,23 @@
+.main-title {
+  position: relative;
+  margin: 120px auto 95px;
+  width: fit-content;
+}
+.main-title::before {
+  content: url(https://i.postimg.cc/C11rQ7jX/line.png);
+  position: absolute;
+  top: 25px;
+  left: -70px;
+  transform: scale(0.5);
+}
+.main-title-2::before {
+  left: -47px;
+  transform: scale(0.6);
+}
+.main-title-3::before {
+  left: -51px;
+  transform: scale(0.6);
+}
+.main-title-4::before {
+  left: -64px;
+}

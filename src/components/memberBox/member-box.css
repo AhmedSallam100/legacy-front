@@ -1,0 +1,92 @@
+.members .container .member-boxes .member {
+  position: relative;
+  z-index: 99;
+  padding: 20px;
+  border-radius: 24px;
+  margin: 70px 0 30px;
+  background-color: var(--box1-color);
+}
+.members .container .member-boxes .member .member-img {
+  position: absolute;
+  left: 50%;
+  top: -90px;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  overflow: hidden;
+  transition: var(--main-tran);
+}
+.members .container .member-boxes .member .member-img:hover {
+  border-radius: 50%;
+}
+.members .container .member-boxes .member .member-img img {
+  width: 200px;
+}
+.members .container .member-boxes .member .member-about {
+  font-weight: 300;
+  text-align: center;
+  margin: 110px 0 20px 0;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+.members .container .member-boxes .member .member-about .member-name {
+  margin-right: 5px;
+}
+.members .container .member-boxes .member .member-about .member-name,
+.reviews .container .review-boxes .review-box .reviewer .reviewer-name,
+.footer .container .copy-right a span {
+  position: relative;
+  font-weight: bold;
+}
+.members .container .member-boxes .member .member-about .member-name::before,
+.reviews .container .review-boxes .review-box .reviewer .reviewer-name::before,
+.footer .container .copy-right a span::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 2px;
+  transition: var(--main-tran);
+  z-index: -1;
+  border-radius: 2px;
+  background-color: var(--main-color);
+}
+.members
+  .container
+  .member-boxes
+  .member
+  .member-about
+  .member-name:hover::before,
+.reviews
+  .container
+  .review-boxes
+  .review-box
+  .reviewer
+  .reviewer-name:hover::before,
+.footer .container .copy-right a span:hover::before {
+  height: 115%;
+}
+.members .container .member-boxes .member .member-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.members .container .member-boxes .member .member-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--main-tran);
+  border: 1px solid var(--white-color);
+}
+.members .container .member-boxes .member .member-social a:hover {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--main-color);
+}
